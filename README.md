@@ -22,22 +22,23 @@ raw → processed → outputs
 
 ## Estructura
 
+````text
 data/
-raw/ → datos originales (csv/xlsx)
-processed/ → datos limpios
-outputs/ → KPIs generados
+  raw/        → datos originales (csv/xlsx)
+  processed/  → datos limpios
+  outputs/    → KPIs generados
 
 notebooks/
-01_exploracion.ipynb
-02_analisis.ipynb
+  01_exploracion.ipynb
+  02_analisis.ipynb
 
 src/pipeline/
-extract.py
-transform.py
-load.py
-validation.py
-kpis.py
-main.py
+  extract.py
+  transform.py
+  load.py
+  validation.py
+  kpis.py
+  main.py
 
 ---
 
@@ -60,7 +61,7 @@ main.py
 
 ```bash
 PYTHONPATH=src python3 -m pipeline.main
-```
+````
 
 ## Autor
 
